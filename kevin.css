@@ -1,5 +1,5 @@
 .intro_image { 
-    background-image: url('Screenshot (64).png');
+    background-image: url('Images/Screenshot (64).png');
     background-repeat: no-repeat;
     background-size: cover;
     height: 800px;
@@ -168,7 +168,7 @@ input[type="text"], input[type="email"], textarea{
 }
 
 .form_background{
-   background-image: url('Screenshot (63).PNG');
+   background-image: url('Images/Screenshot (63).PNG');
    background-size: cover;
    background-repeat: no-repeat;
    opacity: 0.9;
