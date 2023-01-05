@@ -1,0 +1,263 @@
+.intro_image { 
+    background-image: url('Screenshot (64).png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    width: 100%;
+}
+
+.top_links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin-right: 50px ;
+    padding: 50px 16px;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 16px 50px;
+}
+
+nav a:hover{
+    background-color: aqua;
+}
+
+.logo_top img{
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.intro_statement{
+    font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: white;
+    right: 40px;
+    top: 50%;
+    position: absolute;
+    font-size: 3vw;
+}
+
+@media screen and (max-width:600px){
+    nav{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    .top_links{
+        display: flex;
+        flex-direction: column wrap;
+    }    
+}
+
+@media screen and (max-width:962px){
+    nav{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        text-align: center;
+    }
+    .top_links{
+        display: flex;
+        flex-flow: column wrap;
+    }
+}
+
+.intro_statement{
+    font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: white;
+    top: 50%;
+    left: 60%;
+    position: absolute;
+    font-size: 3vw;
+}
+
+.my_introduction {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+  }
+  
+.my_introduction_description {
+    background-color: #76c1d0;
+    padding: 10px;
+  }
+
+.my_introduction_description button{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(101, 240, 228,0.5);
+    margin-left: 400px;
+}
+
+.my_introduction_description button:hover{
+    background-color: rgba(101, 240, 228,1);
+    cursor: pointer;
+}
+
+.my_services {
+    background-color: rgb(10, 11, 11);
+    padding: 10px;
+}
+
+.services_offered {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.services_offered button{
+    height: 300px;
+    flex: 30%;
+}
+
+.my_services{
+    background-color: rgb(15, 15, 15);
+}
+
+.my_services button{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: larger;
+    border: none;   
+}
+
+.my_services button:hover{
+    background-color: red;
+    cursor: pointer;
+}
+
+.user_explanation{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 50px 30px;
+    background-color: rgb(0, 0, 0);
+}
+
+form{
+   padding: 30px 25px;
+   width:100%;
+   text-align: end;
+   top: 30%;
+}
+
+input[type="text"], input[type="email"], textarea{
+   width: 50%;
+   padding: 20px;
+   margin-bottom: 15px;
+   background-color: rgba(255, 255, 255,0);
+   color: white;
+   margin-right: 70px;
+   border-bottom: 3px solid white;
+   border-left: 4px solid rgb(0, 175, 250);
+}
+
+.form_background{
+   background-image: url('Screenshot (63).PNG');
+   background-size: cover;
+   background-repeat: no-repeat;
+   opacity: 0.9;
+   top: 20%;
+   max-width: fit-content;
+}
+
+.form_background button{
+   width: 100px;
+   padding: 15px;
+   background-color: black;
+   color: white;
+   border-radius: 20px;
+   border: none;
+}
+
+.form_background button:hover {
+   background-color: red;
+   cursor: pointer;
+}
+
+.pricing_btn{
+   margin-left: 20px;
+   margin-top: 100px;
+}
+.pricing_btn button{
+   width: 180px;
+   height: 200px;
+   padding: 30px;
+   color: white;
+   background-color: rgba(255, 255, 255, 0.1);
+   border-bottom: 3px solid white;
+
+}
+
+.pricing_btn button:hover {
+   background-image: linear-gradient(to bottom, rgba(0, 145, 255, 1), rgba(0, 145, 255, 0));
+   cursor: pointer;
+}
+
+.projects_examples{
+    background-color: rgb(15, 15, 15);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.projects_completed {
+   display: flex;
+   flex-flow: row;
+   justify-content: flex-end;
+
+}
+
+@media (max-width: 962px) {
+    .my_introduction {
+      display: flex;
+      flex-direction: column;
+    }
+    .services_offered {
+        flex-direction: column;
+    }
+    .services_offered button{
+        line-height: 100px;
+    }
+    .project_explanation{
+        width: 50%;
+    }
+    .user_explanation{
+        display: flex;
+        flex-flow: column;
+    }
+    .pricing_btn button{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        line-height: 100px;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .projects_examples{
+        display: flex;
+        flex-flow: column;
+        width: 100%;
+    }
+    .projects_completed{
+        flex-direction: column;
+        width: 100%;
+    }
+}
+  
+  
+
+  
