@@ -56,6 +56,7 @@ nav a:hover{
     .top_links{
         display: flex;
         flex-direction: column wrap;
+        justify-content: flex-end;
     }    
 }
 
@@ -98,7 +99,7 @@ nav a:hover{
     border-radius: 10px;
     border: none;
     background-color: rgba(101, 240, 228,0.5);
-    margin-left: 400px;
+    margin-left: 170px;
 }
 
 .my_introduction_description button:hover{
