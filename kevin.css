@@ -169,7 +169,7 @@ input[type="text"], input[type="email"], textarea{
 }
 
 .form_background{
-   background-image: url('Images/Screenshot (33).png');
+   background-image: url('./Images/Screenshot (33).png');
    background-size: cover;
    background-repeat: no-repeat;
    opacity: 0.9;
