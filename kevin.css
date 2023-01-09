@@ -125,16 +125,17 @@ nav a:hover{
 }
 
 .my_services{
-    background-color: rgb(15, 15, 15);
+    background-color: rgb(0,0,0);
 }
 
 .my_services button{
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(16, 16, 16);
     color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
     font-size: larger;
     border: none;   
+    margin-left: 10px;
 }
 
 .my_services button:hover{
@@ -168,7 +169,7 @@ input[type="text"], input[type="email"], textarea{
 }
 
 .form_background{
-   background-image: url('Images/Screenshot (63).PNG');
+   background-image: url('C:/Users/840 g3/Pictures/Screenshots/Screenshot (33).PNG');
    background-size: cover;
    background-repeat: no-repeat;
    opacity: 0.9;
@@ -191,12 +192,15 @@ input[type="text"], input[type="email"], textarea{
 }
 
 .pricing_btn{
-   margin-left: 20px;
-   margin-top: 100px;
+   display: flex;
+   flex-flow:row nowrap;
+   flex: 30%;
+   justify-content: center;
+   align-items: center;
 }
 .pricing_btn button{
-   width: 180px;
-   height: 200px;
+   width: 220px;
+   height: 250px;
    padding: 30px;
    color: white;
    background-color: rgba(255, 255, 255, 0.1);
@@ -222,7 +226,7 @@ input[type="text"], input[type="email"], textarea{
 
 }
 
-@media (max-width: 962px) {
+@media (max-width: 800px) {
     .my_introduction {
       display: flex;
       flex-direction: column;
@@ -240,14 +244,6 @@ input[type="text"], input[type="email"], textarea{
         display: flex;
         flex-flow: column;
     }
-    .pricing_btn button{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        line-height: 100px;
-        justify-content: space-evenly;
-        align-items: center;
-    }
     .projects_examples{
         display: flex;
         flex-flow: column;
@@ -257,6 +253,22 @@ input[type="text"], input[type="email"], textarea{
         flex-direction: column;
         width: 100%;
     }
+    .pricing_btn button{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        line-height: 100px;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1120px) {
+        .pricing_btn{
+           flex-direction: column;
+           height: 500px;
+           width: 100%;
+        }
 }
   
   
