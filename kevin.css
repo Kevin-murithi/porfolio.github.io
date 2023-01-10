@@ -46,30 +46,23 @@ nav a:hover{
     font-size: 3vw;
 }
 
-@media screen and (max-width:600px){
+@media screen and (max-width:610px){
     nav{
         display: flex;
         flex-direction: column;
-        width: 100%;
-        text-align: center;
-    }
-    .top_links{
-        display: flex;
-        flex-direction: column wrap;
+        width: 40%;
         justify-content: flex-end;
-    }    
-}
-
-@media screen and (max-width:962px){
-    nav{
-        display: flex;
-        flex-direction: column;
-        width: 50%;
-        text-align: center;
+        padding: 30px 0px;
     }
     .top_links{
         display: flex;
         flex-flow: column wrap;
+    }    
+}
+
+@media screen and (max-width:720px){
+    nav a{
+        padding: 16px 30px;
     }
 }
 
@@ -90,7 +83,7 @@ nav a:hover{
   }
   
 .my_introduction_description {
-    background-color: #76c1d0;
+    background-color: #0bccf3;
     padding: 10px;
   }
 
@@ -105,6 +98,17 @@ nav a:hover{
 .my_introduction_description button:hover{
     background-color: rgba(101, 240, 228,1);
     cursor: pointer;
+}
+
+.my_introduction_description_title{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.my_avatar{
+    border-radius: 100px;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .my_services {
@@ -205,7 +209,6 @@ input[type="text"], input[type="email"], textarea{
    color: white;
    background-color: rgba(255, 255, 255, 0.1);
    border-bottom: 3px solid white;
-
 }
 
 .pricing_btn button:hover {
