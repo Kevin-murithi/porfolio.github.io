@@ -3,7 +3,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 800px;
-    width: 100%;
+    max-width: 100%;
 }
 
 .top_links {
@@ -36,14 +36,24 @@ nav a:hover{
     margin-left: 20px;
 }
 
+@keyframes introduction {
+    0%   {top: 15%;}
+    50%  {top:80%;}
+    100% {top:15%;}
+  }
+
 .intro_statement{
     font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     color: white;
     right: 40px;
-    top: 50%;
     position: absolute;
     font-size: 3vw;
+    animation-name: introduction;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-delay: -1s;
+    animation-iteration-count: infinite;
 }
 
 @media screen and (max-width:610px){
@@ -109,11 +119,12 @@ nav a:hover{
     border-radius: 100px;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 }
 
 .my_services {
     background-color: rgb(10, 11, 11);
-    padding: 10px;
+    padding: 10px 0px;
 }
 
 .services_offered {
@@ -140,22 +151,28 @@ nav a:hover{
     font-size: larger;
     border: none;   
     margin-left: 10px;
+    margin-bottom: 10px;
+    transition: width 5s height 2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: .2s;
+    width: 35%;
 }
 
 .my_services button:hover{
     background-color: red;
     cursor: pointer;
+    width: 40%;
 }
 
 .user_explanation{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding: 50px 30px;
+    padding: 50px 0;
     background-color: rgb(0, 0, 0);
 }
 
 form{
-   padding: 30px 25px;
+   padding: 30px 0px;
    width:100%;
    text-align: end;
    top: 30%;
@@ -173,9 +190,7 @@ input[type="text"], input[type="email"], textarea{
 }
 
 .form_background{
-   background-image: url('./Images/Screenshot (33).png');
-   background-size: cover;
-   background-repeat: no-repeat;
+   background-color: rgb(238, 171, 71);
    opacity: 0.9;
    top: 20%;
    max-width: fit-content;
@@ -202,10 +217,11 @@ input[type="text"], input[type="email"], textarea{
    justify-content: center;
    align-items: center;
 }
+
 .pricing_btn button{
    width: 220px;
    height: 250px;
-   padding: 30px;
+   padding: 30px 0px;
    color: white;
    background-color: rgba(255, 255, 255, 0.1);
    border-bottom: 3px solid white;
@@ -214,19 +230,6 @@ input[type="text"], input[type="email"], textarea{
 .pricing_btn button:hover {
    background-image: linear-gradient(to bottom, rgba(0, 145, 255, 1), rgba(0, 145, 255, 0));
    cursor: pointer;
-}
-
-.projects_examples{
-    background-color: rgb(15, 15, 15);
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-
-.projects_completed {
-   display: flex;
-   flex-flow: row;
-   justify-content: flex-end;
-
 }
 
 .testimonials{
@@ -247,9 +250,14 @@ input[type="text"], input[type="email"], textarea{
     }
     .services_offered {
         flex-direction: column;
+
     }
     .services_offered button{
         line-height: 100px;
+        width: 100%;
+    }
+    .my_services button:hover{
+        width: 100%;
     }
     .project_explanation{
         width: 50%;
@@ -257,15 +265,6 @@ input[type="text"], input[type="email"], textarea{
     .user_explanation{
         display: flex;
         flex-flow: column;
-    }
-    .projects_examples{
-        display: flex;
-        flex-flow: column;
-        width: 100%;
-    }
-    .projects_completed{
-        flex-direction: column;
-        width: 100%;
     }
     .pricing_btn button{
         display: flex;
@@ -287,6 +286,14 @@ input[type="text"], input[type="email"], textarea{
            height: 500px;
            width: 100%;
         }
+}
+
+.contact_information {
+    color: white;
+}
+
+.contact_information a{
+    color: white;
 }
   
 
